@@ -138,8 +138,8 @@ const Menu = () => {
           ))}
         </div>
 
-        {/* Menu Items */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* Menu Items - Desktop Grid, Mobile Horizontal Scroll */}
+        <div className="hidden md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {menuItems[activeCategory as keyof typeof menuItems].map((item, index) => (
             <div
               key={item.name}
@@ -184,6 +184,56 @@ const Menu = () => {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Mobile Horizontal Scroll */}
+        <div className="md:hidden">
+          <div className="flex overflow-x-auto gap-4 pb-4 scrollbar-hide snap-x snap-mandatory">
+            {menuItems[activeCategory as keyof typeof menuItems].map((item, index) => (
+              <div
+                key={item.name}
+                className="bg-white rounded-xl shadow-lg overflow-hidden flex-shrink-0 w-80 max-w-[80vw] snap-start animate-fade-in"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                <div className="relative h-40 overflow-hidden">
+                  <img
+                    src={item.image}
+                    alt={item.name}
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute top-2 right-2 flex gap-1">
+                    {item.dietary.map((diet) => (
+                      <Badge key={diet} className="bg-saffron text-charcoal font-open-sans text-xs">
+                        {diet}
+                      </Badge>
+                    ))}
+                  </div>
+                </div>
+                
+                <div className="p-4">
+                  <div className="flex justify-between items-start mb-2">
+                    <h3 className="text-lg font-inter font-semibold text-charcoal">
+                      {item.name}
+                    </h3>
+                    <span className="text-lg font-inter font-bold text-paprika">
+                      {item.price}
+                    </span>
+                  </div>
+                  
+                  <p className="text-charcoal/70 font-open-sans mb-3 leading-relaxed text-sm">
+                    {item.description}
+                  </p>
+                  
+                  {item.spiceLevel > 0 && (
+                    <div className="flex items-center gap-2">
+                      <span className="text-xs font-open-sans text-charcoal/60">Spice Level:</span>
+                      <span className="text-sm">{getSpiceIndicator(item.spiceLevel)}</span>
+                    </div>
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

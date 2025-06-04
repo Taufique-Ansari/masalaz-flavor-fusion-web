@@ -54,8 +54,8 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Fixed positioning for floating info cards - moved higher and made responsive */}
-        <div className="fixed bottom-4 md:bottom-8 left-0 right-0 z-20">
+        {/* Floating info cards - positioned absolute within Hero section only */}
+        <div className="absolute bottom-4 md:bottom-8 left-0 right-0 z-20">
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-4 max-w-4xl mx-auto">
               <div className="bg-cream/20 backdrop-blur-sm rounded-lg p-3 md:p-4 animate-float border border-cream/30">
