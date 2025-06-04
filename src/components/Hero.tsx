@@ -25,7 +25,7 @@ const Hero = () => {
         <div className="absolute top-16 left-1/2 text-4xl animate-float" style={{ animationDelay: '3.5s' }}>🌿</div>
       </div>
 
-      <div className="container mx-auto px-4 text-center text-cream relative z-10">
+      <div className="container mx-auto px-4 text-center text-cream relative z-10 pb-32">
         <div className="max-w-4xl mx-auto animate-fade-in">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-inter font-bold mb-4 md:mb-6 leading-tight">
             Masalaz <span className="text-saffron">One</span>
@@ -53,23 +53,23 @@ const Hero = () => {
             </Button>
           </div>
         </div>
+      </div>
 
-        {/* Floating info cards - positioned absolute within Hero section only */}
-        <div className="absolute bottom-4 md:bottom-8 left-0 right-0 z-20">
-          <div className="container mx-auto px-4">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-4 max-w-4xl mx-auto">
-              <div className="bg-cream/20 backdrop-blur-sm rounded-lg p-3 md:p-4 animate-float border border-cream/30">
-                <h3 className="font-inter font-semibold text-saffron mb-1 md:mb-2 text-sm md:text-base">Hours</h3>
-                <p className="font-open-sans text-xs md:text-sm text-cream">Daily: 11:30 AM - 10:00 PM</p>
-              </div>
-              <div className="bg-cream/20 backdrop-blur-sm rounded-lg p-3 md:p-4 animate-float border border-cream/30" style={{ animationDelay: '1s' }}>
-                <h3 className="font-inter font-semibold text-saffron mb-1 md:mb-2 text-sm md:text-base">Location</h3>
-                <p className="font-open-sans text-xs md:text-sm text-cream">123 Spice Street, Flavor District</p>
-              </div>
-              <div className="bg-cream/20 backdrop-blur-sm rounded-lg p-3 md:p-4 animate-float border border-cream/30" style={{ animationDelay: '2s' }}>
-                <h3 className="font-inter font-semibold text-saffron mb-1 md:mb-2 text-sm md:text-base">Phone</h3>
-                <p className="font-open-sans text-xs md:text-sm text-cream">(555) 123-4567</p>
-              </div>
+      {/* Floating info cards - positioned at the very bottom of hero section */}
+      <div className="absolute bottom-0 left-0 right-0 z-20 bg-gradient-to-t from-charcoal/50 to-transparent pt-8 pb-4">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-4 max-w-4xl mx-auto">
+            <div className="bg-cream/20 backdrop-blur-sm rounded-lg p-3 md:p-4 animate-float border border-cream/30">
+              <h3 className="font-inter font-semibold text-saffron mb-1 md:mb-2 text-sm md:text-base">Hours</h3>
+              <p className="font-open-sans text-xs md:text-sm text-cream">Daily: 11:30 AM - 10:00 PM</p>
+            </div>
+            <div className="bg-cream/20 backdrop-blur-sm rounded-lg p-3 md:p-4 animate-float border border-cream/30" style={{ animationDelay: '1s' }}>
+              <h3 className="font-inter font-semibold text-saffron mb-1 md:mb-2 text-sm md:text-base">Location</h3>
+              <p className="font-open-sans text-xs md:text-sm text-cream">123 Spice Street, Flavor District</p>
+            </div>
+            <div className="bg-cream/20 backdrop-blur-sm rounded-lg p-3 md:p-4 animate-float border border-cream/30" style={{ animationDelay: '2s' }}>
+              <h3 className="font-inter font-semibold text-saffron mb-1 md:mb-2 text-sm md:text-base">Phone</h3>
+              <p className="font-open-sans text-xs md:text-sm text-cream">(555) 123-4567</p>
             </div>
           </div>
         </div>

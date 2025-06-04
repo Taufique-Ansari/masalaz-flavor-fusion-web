@@ -105,8 +105,8 @@ const Gallery = () => {
           ))}
         </div>
 
-        {/* Gallery Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        {/* Gallery Grid - Desktop */}
+        <div className="hidden md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {filteredItems.map((item, index) => (
             <div
               key={item.id}
@@ -134,6 +134,39 @@ const Gallery = () => {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Gallery - Mobile Horizontal Scroll */}
+        <div className="md:hidden">
+          <div className="flex overflow-x-auto gap-4 pb-4 scrollbar-hide snap-x snap-mandatory">
+            {filteredItems.map((item, index) => (
+              <div
+                key={item.id}
+                className="group relative overflow-hidden rounded-xl shadow-lg flex-shrink-0 w-72 max-w-[80vw] snap-start animate-fade-in"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                <div className="aspect-square overflow-hidden">
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                </div>
+                
+                {/* Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-transparent to-transparent opacity-60">
+                  <div className="absolute bottom-0 left-0 right-0 p-4 text-cream">
+                    <h3 className="font-inter font-semibold text-lg mb-1">
+                      {item.title}
+                    </h3>
+                    <p className="font-open-sans text-sm opacity-90">
+                      {item.description}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
 
         {/* Instagram CTA */}
