@@ -18,7 +18,7 @@ const Menu = () => {
       {
         name: "Samosas",
         description: "Crispy golden triangles filled with spiced potatoes and peas",
-        price: "$8.99",
+        price: "Rs.50",
         spiceLevel: 2,
         dietary: ["Vegetarian"],
         image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
@@ -26,7 +26,7 @@ const Menu = () => {
       {
         name: "Chicken Tikka",
         description: "Marinated chicken pieces grilled to perfection in tandoor",
-        price: "$12.99",
+        price: "Rs.150",
         spiceLevel: 3,
         dietary: ["Gluten-Free"],
         image: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
@@ -34,7 +34,7 @@ const Menu = () => {
       {
         name: "Paneer Tikka",
         description: "Cubes of cottage cheese marinated in aromatic spices",
-        price: "$10.99",
+        price: "Rs.130",
         spiceLevel: 2,
         dietary: ["Vegetarian", "Gluten-Free"],
         image: "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
@@ -44,7 +44,7 @@ const Menu = () => {
       {
         name: "Butter Chicken",
         description: "Tender chicken in rich tomato and cream sauce",
-        price: "$18.99",
+        price: "Rs.250",
         spiceLevel: 2,
         dietary: ["Gluten-Free"],
         image: "https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
@@ -52,7 +52,7 @@ const Menu = () => {
       {
         name: "Lamb Biryani",
         description: "Fragrant basmati rice with tender lamb and aromatic spices",
-        price: "$22.99",
+        price: "Rs.299",
         spiceLevel: 3,
         dietary: ["Gluten-Free"],
         image: "https://images.unsplash.com/photo-1563379091339-03246c8238e9?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
@@ -60,7 +60,7 @@ const Menu = () => {
       {
         name: "Dal Makhani",
         description: "Creamy black lentils slow-cooked with butter and spices",
-        price: "$14.99",
+        price: "Rs.199",
         spiceLevel: 1,
         dietary: ["Vegetarian", "Gluten-Free"],
         image: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
@@ -70,7 +70,7 @@ const Menu = () => {
       {
         name: "Mango Lassi",
         description: "Traditional yogurt drink blended with fresh mango",
-        price: "$4.99",
+        price: "Rs.69",
         spiceLevel: 0,
         dietary: ["Vegetarian"],
         image: "https://images.unsplash.com/photo-1568741540563-22dd76f62c3d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
@@ -78,7 +78,7 @@ const Menu = () => {
       {
         name: "Masala Chai",
         description: "Aromatic tea brewed with cardamom, cinnamon, and ginger",
-        price: "$3.99",
+        price: "Rs.39",
         spiceLevel: 1,
         dietary: ["Vegetarian"],
         image: "https://images.unsplash.com/photo-1544787219-7f47ccb76574?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
@@ -88,15 +88,15 @@ const Menu = () => {
       {
         name: "Gulab Jamun",
         description: "Sweet milk dumplings in cardamom-rose syrup",
-        price: "$6.99",
+        price: "Rs.59",
         spiceLevel: 0,
         dietary: ["Vegetarian"],
-        image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+        image: ""
       },
       {
         name: "Kulfi",
         description: "Traditional Indian ice cream with cardamom and pistachios",
-        price: "$5.99",
+        price: "Rs.99",
         spiceLevel: 0,
         dietary: ["Vegetarian"],
         image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"

@@ -1,4 +1,3 @@
-
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import Menu from "@/components/Menu";
@@ -9,7 +8,7 @@ import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-cream relative">
+    <div className="min-h-screen bg-cream relative scroll-smooth">
       {/* Global food illustration background */}
       <div className="fixed inset-0 pointer-events-none opacity-5 z-0">
         <div className="absolute top-32 left-8 text-4xl animate-float">🍅</div>

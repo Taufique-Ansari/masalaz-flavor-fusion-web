@@ -1,13 +1,11 @@
-
 import { Facebook, Instagram, Phone, Mail, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 
 const Footer = () => {
   return (
     <footer className="bg-charcoal text-cream py-16">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Restaurant Info */}
           <div>
             <h3 className="text-2xl font-inter font-bold mb-6">
@@ -70,7 +68,7 @@ const Footer = () => {
             <div className="space-y-4 font-open-sans">
               <div className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-saffron" />
-                <span className="text-cream/80">(555) 123-4567</span>
+                <span className="text-cream/80">078209 82492</span>
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-saffron" />
@@ -79,28 +77,11 @@ const Footer = () => {
               <div className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-saffron mt-1" />
                 <span className="text-cream/80">
-                  123 Spice Street<br />
-                  Flavor District, FD 12345
+                  Trambakeshwar Rd, opp. Papayas Chowk,<br />
+                  Khode Park, Satpur Colony, Nashik,<br />
+                  Maharashtra 422007
                 </span>
               </div>
-            </div>
-          </div>
-
-          {/* Newsletter */}
-          <div>
-            <h4 className="text-lg font-inter font-semibold mb-6">Stay Updated</h4>
-            <p className="font-open-sans text-cream/80 mb-4">
-              Subscribe to our newsletter for special offers and updates.
-            </p>
-            <div className="space-y-3">
-              <Input
-                type="email"
-                placeholder="Your email address"
-                className="bg-cream/10 border-cream/20 text-cream placeholder:text-cream/60 font-open-sans"
-              />
-              <Button className="w-full bg-paprika hover:bg-paprika/90 text-cream font-open-sans">
-                Subscribe
-              </Button>
             </div>
           </div>
         </div>
