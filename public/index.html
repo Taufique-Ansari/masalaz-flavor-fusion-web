@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Masalaz One</title>
     <base href="/masalaz-flavor-fusion-web/" />
+    <script>
+      // Prevent redirect to root domain
+      if (window.location.hostname === 'taufique-ansari.github.io' && 
+          !window.location.pathname.startsWith('/masalaz-flavor-fusion-web')) {
+        window.location.href = '/masalaz-flavor-fusion-web/';
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>
